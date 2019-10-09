@@ -1,5 +1,5 @@
 # Wild-Circus
-Check Point de la Wild code School 
+Check Point de la Wild code School ( projet réalisé en 16 heures)
 
 Ce site permet de trouver les cirques qui se trouvent autour de nous.
 
