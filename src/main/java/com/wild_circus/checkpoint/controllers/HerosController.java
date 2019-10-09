@@ -1,14 +1,17 @@
 package com.wild_circus.checkpoint.controllers;
 
+
+
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class CircusController {
+public class HerosController {
 
-    @GetMapping("/circus")
+    @GetMapping("/browse")
     public String browse() {
-        return "/circus";
+        return "/browse";
     }
+
 }
