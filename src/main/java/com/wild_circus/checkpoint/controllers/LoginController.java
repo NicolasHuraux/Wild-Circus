@@ -23,17 +23,17 @@ public class LoginController {
         model.addAttribute("user", new User());
         return "/login";
     }
+
+    @GetMapping("/home")
+    public String home() {
+        return "circus";        //avec ce get je passe outre l obligaiton de se logger(a regler en reinstallant spring security?)
+    }
     
     @GetMapping("/loginError")
     public String loginError() {
         return "/loginError";
     }
 
-    @GetMapping("/users/create")
-    public String create(Model model){
-        model.addAttribute("user", new User());
-        return "/circus";
-    }
        
     @PostMapping("/users/create")
     public String store(@Valid User user) {

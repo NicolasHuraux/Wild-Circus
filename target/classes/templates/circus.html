@@ -3,12 +3,24 @@
 <head>
     <title>Wild Circus Super Heroes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
 </head>
 
 <body>
-<h1>Ou sont les cirques ?</h1>
-
+<h2>Ou sont les cirques de la region ?</h2>
+<p>Tu veux voir des comabats de dingue ? Tu veux voir SpiderBryan se battre contre IronSeb ? Tu es au bon endroit !! Tu peux decouvrir tes supers heros en te randant sur leur page !</p>
+<table class="table table-striped mt-5 d-flex justify-content-center text-center">
+      <tr>
+        <th scope="col">Ville</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Date</th>
+      </tr>
+      <tr th:each="circus : ${circus}">
+        <td th:text="${circus.ville}"></td>
+        <td th:text="${circus.prix}"></td>
+        <td th:text="${circus.date}"></td>
+      </tr>
+  </table>
 
 
 

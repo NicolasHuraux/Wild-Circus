@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
 </head>
 <body class="container-fluid text-center">
-        <header><img src="http://braindamaged.fr/wp-content/uploads/2018/03/Avengers-Infinity-War-nouveaux-poster-une-631x250.jpg" class="pt-3 mb-3 img-fluid"></header>
-        <h1><b>Bienvenue sur le Wild Circus Super Heroes</b></h1>
-
+        <header><img src="http://braindamaged.fr/wp-content/uploads/2018/03/Avengers-Infinity-War-nouveaux-poster-une-631x250.jpg" class="pt-3 mb-3 img-fluid">
+        <button type="button" class="btn btn-primary pt-2 mb-2 img-fluid" data-toggle="modal" data-target="#exampleModalLong">S'inscrire</button></header>
+        
+        <h1><b>Wild Circus Super Heroes</b></h1>
+                
+        
         <div class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -28,10 +31,6 @@
               </div>
             </div>
           </div>
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-    S'inscrire
-  </button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -72,7 +71,7 @@
       </div>
     </div>
   </div>
-        <form th:action="@{/login}" method="post" th:object="${user}" class="d-inline-block shadow-sm p-3 text-left rounded">
+          <form th:action="@{/home}" method="get" th:object="${user}" class="d-inline-block shadow p-3 text-left rounded">
             <div class="form-group mb-3" >
                 <label for="email"  class="mb-2">Email</label>
                 <input class="form-control" type="text"  name="username" id="email" placeholder="exemple@mail.com" required="required">
@@ -81,14 +80,11 @@
                 <label for="password"  class="mb-2" >Mot de passe</label>
                 <input class="form-control" type="password"  name="password" id="password" placeholder="••••••••••" required="required">
             </div>
-            <div class="mb-3 text-right">
+            <div class="mb-3 text-center">
                 <button type="submit" value="Login" class="btn btn-primary">Se connecter</button>
             </div>
         </form>
-        
-       
-
-
+  
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
