@@ -1,0 +1,8 @@
+com/wild_circus/checkpoint/CheckpointApplication.class
+com/wild_circus/checkpoint/repositories/CircusRepository.class
+com/wild_circus/checkpoint/controllers/CircusController.class
+com/wild_circus/checkpoint/repositories/UserRepository.class
+com/wild_circus/checkpoint/controllers/LoginController.class
+com/wild_circus/checkpoint/entities/User.class
+com/wild_circus/checkpoint/controllers/HerosController.class
+com/wild_circus/checkpoint/entities/Circus.class
