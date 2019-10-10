@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
 </head>
 <body class="container-fluid text-center">
-        <header><img src="http://braindamaged.fr/wp-content/uploads/2018/03/Avengers-Infinity-War-nouveaux-poster-une-631x250.jpg" class="pt-3 mb-3 img-fluid">        
-        <h1><b>Wild Circus Super Heroes</b></h1>       
+        <br>   
+        <h1><b>Wild Circus Super Heroes</b></h1> 
+        <br>      
+        <br>   
+        <br>   
+        <br>   
+        <br>   
         <div class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -67,11 +72,11 @@
   </div>
           <form th:action="@{/home}" method="get" th:object="${user}" class="d-inline-block shadow p-3 text-left rounded">
             <div class="form-group mb-3" >
-                <label for="email"  class="mb-2">Email</label>
+                <label for="email"  class="mb-2"><p>Email</p></label>
                 <input class="form-control" type="text"  name="username" id="email" placeholder="exemple@mail.com" required="required">
             </div>
             <div class="form-group mb-3" >
-                <label for="password"  class="mb-2" >Mot de passe</label>
+                <label for="password"  class="mb-2"><p>Mot de passe</p></label>
                 <input class="form-control" type="password"  name="password" id="password" placeholder="••••••••••" required="required">
             </div>
             <div class="mb-3 text-center">
@@ -79,7 +84,7 @@
             </div>
         </form>
         <div class="my-3 mr-3 d-flex justify-content-end ">
-          <label class=" mr-2 d-flex align-items-end" for="avatar">Pour te connecter il faut :</label> 
+          <label class=" mr-2 d-flex align-items-end" for="avatar"><p>Pour te connecter il faut :</p></label> 
           <button type="button" class="btn btn-primary pt-2 mb-2 img-fluid" data-toggle="modal" data-target="#exampleModalLong">S'inscrire</button></header>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
