@@ -26,7 +26,7 @@ public class LoginController {
 
     @GetMapping("/home")
     public String home() {
-        return "circus";        //avec ce get je passe outre l obligaiton de se logger(a regler en reinstallant spring security?)
+        return "forward:/circus";        //avec ce get je passe outre l obligaiton de se logger(a regler en reinstallant spring security?)
     }
     
     @GetMapping("/loginError")
